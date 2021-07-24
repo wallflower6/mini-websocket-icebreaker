@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.0.1/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Who Said That</title>
+</head>
+<body>
+    <div id="entry">
+        <input type="text" id="handle", placeholder="Input a username" />
+        <button id="submit-handle">Join</button>
+    </div>
+
+    <h2 id="username"></h2>
+
+    <div id="main" class="hide">
+        <div id="question">
+            <h2 id="qText"></h2>
+            <input type="text" id="answer", placeholder="Your answer here..." />
+            <button id="send">Submit</button>
+        </div>
+    </div>
+
+    <div id="responses" class="hide">
+        Waiting for others...
+    </div>
+
+    <div id="guess" class="hide">
+        <input type="text" id="guess-user" placeholder="Your guess here..."/>
+        <button id="guess-btn">Guess</button>
+        <p id="affirmation"></p>
+        <p id="score"></p>
+    </div>
+
+    <div id="errors"></div>
+
+    <div id="users-list"></div>
+    <script src="/client.js"></script>
+</body>
+</html>

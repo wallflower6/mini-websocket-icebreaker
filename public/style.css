@@ -1,0 +1,30 @@
+body{
+    font-family: 'Nunito';
+    padding: 0;
+    margin: 0;
+}
+
+#users-list {
+    background-color: antiquewhite;
+    height: 30%;
+    overflow: scroll;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+.hide {
+    display: none !important;
+}
+
+#errors {
+    color: red;
+}
